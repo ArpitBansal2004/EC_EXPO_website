@@ -1,0 +1,116 @@
+/* Resetting default margins and paddings for all elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the full height is utilized for overflow calculation */
+    font-family: Arial, sans-serif; /* Optional: sets a default font for the whole page */
+}
+
+/* Styles for the fixed header */
+header {
+    background-color: white; /* Sets the background color of the header to white */
+    position: fixed; /* Keeps the header at the top of the viewport */
+    top: 0; /* Aligns the top edge of the header with the top of the viewport */
+    left: 0; /* Aligns the left edge of the header with the left of the viewport */
+    width: 100%; /* Ensures the header spans the full width of the viewport */
+    z-index: 1000; /* Ensures the header stays above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    display: flex; /* Enables flexbox layout within the header */
+    justify-content: space-between; /* Positions the logo and social media on opposite ends */
+    align-items: center; /* Centers items vertically within the header */
+    padding: 10px 20px; /* Adds padding within the header */
+}
+
+/* Styles for the logo */
+#header-logo {
+    height: 50px; /* Sets a fixed height for the logo for consistency */
+    width: auto; /* Ensures the width is automatically adjusted to maintain aspect ratio */
+}
+
+/* Styles for the social media container */
+#social-media {
+    display: flex; /* Enables flexbox layout for social media links */
+    align-items: center; /* Centers the links vertically */
+    justify-content: flex-end; /* Aligns the links to the right */
+    flex: 1; /* Allows the container to take up the remaining space */
+    margin-left: auto; /* Pushes the container to the right */
+}
+
+/* Styles for the social media links */
+#social-media a {
+    margin-left: 10px; /* Adds space between individual social media icons */
+}
+
+/* Styles for the social media images */
+#social-media img {
+    width: 32px; /* Sets a specific width for the social media icons */
+    height: auto; /* Adjusts the height automatically to maintain aspect ratio */
+    flex-shrink: 1; /* Allows the image to shrink if necessary */
+}
+
+/* Padding to prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 70px; /* Sets padding to match the height of the header */
+}
+
+/* Styles for the 'About' section */
+#about {
+    text-align: center; /* Centers the text horizontally */
+    padding: 20px; /* Adds padding inside the 'About' section */
+    height: 100vh; /* Sets the height to fill the entire viewport vertically */
+    background-color: #003366; /* Sets a specific background color */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers the content vertically */
+    color: white; /* Sets the text color to white */
+}
+
+/* Styles for the statistics in the 'About' section */
+#about div span {
+    display: block; /* Ensures each statistic is on a new line */
+    margin: 10px 0; /* Adds vertical margin for spacing */
+}
+
+/* Styles for the 'Day Information' section */
+#day-info {
+    background-color: #f0f0f0; /* Sets a light background color for contrast */
+    padding: 20px; /* Adds padding inside the section */
+}
+
+/* Styles for the 'Meet the Team' section */
+#meet-the-team .team-member {
+    text-align: center; /* Centers the team member's information horizontally */
+    margin: 20px; /* Adds margin around each team member for spacing */
+}
+
+.team-row {
+    display: flex; /* This will align the team-member divs in a row */
+    justify-content: center; /* This will center the divs in the row */
+    flex-wrap: wrap; /* Allows the items to wrap to the next line if the row is full */
+}
+
+/* Styles for the team member divs */
+.team-member {
+    text-align: center; /* Centers the team member's information horizontally */
+    margin: 20px; /* Adds margin around each team member for spacing */
+    flex-basis: 150px; /* Minimum width for each team member */
+}
+
+/* Styles for the team member titles */
+.team-member .title {
+    color: #777; /* Example color for the title text */
+    font-size: 0.9em; /* Slightly smaller font size for the title */
+    margin-top: 5px; /* Small margin-top for spacing between name and title */
+}
+
+
+/* Styles for the team member images */
+.team-member img {
+    width: 150px; /* Sets a specific width for the team member images */
+    border-radius: 50%; /* Makes the images circular */
+}
+
+/* Styles for the team member names */
+.team-member p {
+    margin-top: 10px; /* Adds spacing between the image and the name */
+}
